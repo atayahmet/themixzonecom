@@ -1,0 +1,44 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "outDir": "build/dist",
+    "module": "esnext",
+    "target": "es5",
+    "lib": ["es6", "dom"],
+    "sourceMap": true,
+    "allowJs": true,
+    "jsx": "react",
+    "moduleResolution": "node",
+    "rootDir": "src",
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noImplicitAny": true,
+    "importHelpers": true,
+    "strictNullChecks": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "noUnusedLocals": true,
+    "paths": {
+      "@music/actions/*": ["src/_actions/*"],
+      "@music/reducers": ["src/_reducers/index.ts"],
+      "@music/reducers/*": ["src/_reducers/*"],
+      "@music/models": ["src/models/index.ts"],
+      "@music/initializer": ["src/initializer.ts"],
+      "@music/interfaces": ["src/interfaces.ts"],
+      "@music/filters": ["src/filters.ts"],
+      "@music/utils": ["src/utils.ts"],
+      "@music/config": ["src/config.ts"],
+      "@music/images/*": ["src/assets/images/*"],
+      "@music/components/*": ["src/components/*"]
+    }
+  },
+  "exclude": [
+    "node_modules",
+    "build",
+    "scripts",
+    "acceptance-tests",
+    "webpack",
+    "jest",
+    "src/setupTests.ts"
+  ]
+}

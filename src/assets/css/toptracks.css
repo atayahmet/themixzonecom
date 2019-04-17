@@ -1,0 +1,97 @@
+.toptracks-container {
+  background-color: #F6F7FB!important;
+  width: auto;
+  height: 435px;
+  box-shadow: initial!important;
+  border: 0!important;
+  border-radius: 0!important;
+  margin-top: 0!important;
+}
+.toptracks-container > .ui.container {
+  width: calc(100% - 14rem);
+}
+
+.toptracks-container > .ui.container > .ui.medium.header {
+  font-weight: bold;
+  margin-top: 40px;
+  margin-bottom: 28px;
+}
+
+.toptracks-container .ui.grid>.column:not(.row), .ui.grid>.row>.column {
+  padding: 0!important;
+}
+
+.toptracks-container .ui.grid>.column:not(.row), .ui.grid>.row>.column .segment {
+  box-shadow: initial!important;border: none!important;border-radius: 0!important;
+}
+
+.toptracks-container .column > .ui.segment {
+  padding: .35em .35em;
+  padding-top: 0px!important;
+  padding-bottom: 0px!important;
+  height: 100%;
+  background: initial!important;
+}
+
+.toptracks-container .column > .ui.segment img {
+  max-width: 49px;
+  border-radius: 5px;
+  background: #D8D8D8;
+  box-shadow: 2px 16px 15px -8px rgba(0,0,0,0.50);
+}
+
+.toptracks-container .ui.grid>.row {
+  border-radius: 4px;
+  padding-top: 0!important;
+  padding-bottom: 0!important;
+  height: 64px;
+  margin-bottom: 4px;
+  background: #FFFFFF;
+  background-image: linear-gradient(-180deg, rgba(255,255,255,0.02) 21%, rgba(35,35,35,0.02) 97%, rgba(0,0,0,0.02) 100%);
+  border: 1px solid #F0F1F6;
+  font-weight: bold;
+  transition: box-shadow 350ms ease-in-out;
+}
+
+.toptracks-container .ui.grid>.row:hover {
+  border: 1px solid #F0F1F6;
+  box-shadow: 0 0 26px -9px rgba(0,0,0,0.50);
+  background-image: linear-gradient(-180deg, rgba(106,92,92,0.03) 21%, rgba(35,35,35,0.03) 100%, rgba(0,0,0,0.03) 100%);
+}
+
+.toptracks-container div.thumbnail {
+  width: 64px!important;
+  height: 64px!important;
+}
+.toptracks-container div.action {
+  color: #E0E1E5;
+  text-align: right!important;
+  width: 35px!important;
+  height: 63px;
+  font-size: 2.2rem;
+  line-height: 46px;
+}
+
+.toptracks-container div.title .icon {
+  color: #2D3249!important;
+}
+
+.toptracks-container .ui.top.left.pointing.dropdown>.menu {
+  margin: .5em -27px 0!important;
+}
+
+.toptracks-container div.duration {
+  color: #B1B2B6;;
+}
+
+.toptracks-container div.thumbnail > .ui.segment {
+  padding-top: 7px!important;
+}
+
+.toptracks-container
+  .ui.column.grid>[class*="one wide"].column.thumbnail,
+  .ui.grid>.column.row>[class*="one wide"].column.thumbnail,
+  .ui.grid>.row>[class*="one wide"].column.thumbnail,
+  .ui.grid>[class*="one wide"].column.thumbnail {
+    width: 70px!important;
+  }

@@ -1,0 +1,13 @@
+.ui.label.genre-tag {
+  font-family: 'Oswald';
+  background: #5DA8B3;
+  border-radius: 12px!important;
+  padding-right: 13px!important;
+  padding-left: 13px!important;
+  color: #E8FFFF;
+  box-shadow: 0 4px 28px 0 #2FE5F8;
+  font-size: 12px;
+  font-weight: 400;
+  margin: 2px;
+  letter-spacing: 1px;
+}

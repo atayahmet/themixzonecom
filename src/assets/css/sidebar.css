@@ -1,0 +1,82 @@
+.sidebar-container {
+  height: 100vh;
+}
+
+.sidebar-container > .pushable > i {
+  z-index: 11;
+  margin-top: 10px;
+  margin-left: 7px;
+  font-size: 1.5em;
+  height: 1.5em;
+  color: #0b3a3e;
+  position: absolute;
+}
+.sidebar-container .ui.vertical.menu {
+  width: 100%;
+  box-shadow: initial!important;
+  border: initial!important;
+}
+
+.sidebar-container .ui.left.sidebar, .ui.right.sidebar {
+  width: 244px;
+  box-shadow: initial!important;
+}
+
+.sidebar-container .ui.container.pusher {
+  margin-left: 0px!important;
+  margin-right: 0px!important;
+}
+
+.sidebar-container .ui.fluid.container.pusher {
+  width: 100%!important;
+}
+
+.sidebar-container .ui.container.pusher {
+  float: right;
+  width: calc(100% - 247px)!important;
+}
+
+@media (max-width: 900px) {
+  .sidebar-container .ui.container.pusher {
+    width: 100%!important;
+  }
+}
+
+.sidebar-container .ui.sidebar.menu .item, .ui.labeled.icon.menu .header {
+  text-align: left;
+  font-size: .9rem;
+  font-weight: 600;
+}
+
+.sidebar-container .ui.sidebar.menu .item {
+  padding: 0!important;
+  margin-top: 12px;
+}
+
+.sidebar-container .ui.sidebar.menu .item::before {
+  height: 0!important;
+}
+
+.sidebar-container .ui.sidebar.menu .item a {
+  color: #414244;
+  font-weight: 700;
+  display: inline-block;
+  width: 100%;
+  padding: 9px 0 5px 30px;
+}
+
+.sidebar-container .ui.sidebar.menu .item a:hover {
+  background-color: #bff8ff;
+}
+
+.sidebar-container .ui.sidebar.menu .item a i.icon {
+  color: #CFCFD1!important;
+  margin: 0 1.05rem 0 0!important;
+}
+
+.sidebar-container .ui.labeled.icon.menu .header {
+  color: #cbcbd0;
+  padding-left: 38px;
+  margin-top: 25px;
+}
+

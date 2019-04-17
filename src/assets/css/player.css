@@ -1,0 +1,297 @@
+.player-bar-container {
+  height: auto;
+  background: rgb(7,94,105);
+  background: linear-gradient(180deg, rgba(7,94,105,1) 0%, rgba(8,111,124,1) 46%, rgb(0, 120, 136) 100%);
+  position: fixed;
+  bottom: 0;
+  padding: 0;
+  -webkit-box-shadow: 0px -2px 5px -1px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px -2px 5px -1px rgba(0,0,0,0.75);
+  box-shadow: 0px -2px 5px -1px rgba(0,0,0,0.75);
+}
+
+.player-bar-container > .grid {
+  margin: 0;
+}
+
+.player-bar-container .ui.grid .container-inside-wrapper h3 {
+  padding: 0 10px;
+  color: white;
+  font-size: 1.1em;
+}
+
+.player-bar-container .ui.grid .container-inside-wrapper .player-wrapper {
+  padding-top: 6px!important;
+  padding-bottom: 3px!important;
+  /* background-color: #005661; */
+  margin-left: 10px;
+  height: 100%;
+}
+
+.player-bar-container img.track-cover {
+  border-radius: 4px;
+  box-shadow: 2px 5px 10px -8px rgba(0,0,0,0.50);
+}
+
+.player-bar-container .row.container-inside-wrapper {
+  padding: 0;
+}
+
+.player-bar-container .ui.vertical.divider.divider-left {
+  right: 0;
+  left: initial;
+}
+
+.player-bar-container .ui.vertical.divider.divider-right {
+  left: 0;
+  right: initial;
+}
+
+.player-bar-container .ui.vertical.divider::before {
+  height: 100%;
+}
+
+.player-bar-container .ui.vertical.divider::after {
+  height: 100%;
+}
+
+.player-bar-container .player-bar {
+  padding-bottom: 5px;
+  padding-top: 5px;
+  font-size: .8em;
+  color: #e0e0e0;
+}
+
+.player-bar-container .player-bar img.player-loader {
+  position: relative;
+  left: 5px;
+  top: 3px;
+}
+
+.player-bar-container .player-bar .ui.grid {
+  margin: 0;
+}
+
+.player-bar-container .player-bar .ui.medium.progress {
+  margin: 0;
+}
+
+.player-bar-container .player-bar .grid .row:first-child {
+  padding: 0;
+}
+
+.player-bar-container .player-bar .grid .row:first-child .column a {
+  display: inline-block;
+  padding: 10px 12px 10px 5px;
+  border-radius: 6px;
+}
+
+.player-bar-container .player-bar .grid .row:first-child .column a i.icon {
+  margin: 0;
+  padding-top: 2px;
+  font-size: 2.5em;
+  color: #dcdcdc;
+}
+
+.player-bar-container .player-bar .progress .bar {
+  border-radius: 15px;
+  background-color: #53dcea;
+  opacity: .4;
+}
+
+.player-bar-container .player-bar .progress {
+  box-shadow: inset 0 1px 0 rgba(0,0,0,.1), inset 0 -1px 1px rgba(0,0,0,.1), 0 1px 0 hsla(0,0%,100%,.05);
+  border-radius: 15px;
+}
+
+.player-bar-container .player-bar .timeline-container {
+  width: 100%;
+  height: 7px;
+  background-color: #056370;
+  box-shadow: inset 0 1px 0 rgba(0,0,0,.1), inset 0 -1px 1px rgba(0,0,0,.1), 0 1px 0 hsla(0,0%,100%,.05);
+  border-radius: 15px;
+  margin-bottom: 17px;
+  position: relative;
+  top: 0;
+}
+
+.player-bar-container .player-bar .timeline-container .bar {
+  height: 7px;
+  width: 50px;
+  background-color: #7ddfe6;
+  border-radius: 4px;
+  position: relative;
+}
+
+.player-bar-container .player-bar .timeline-container .cursor {
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  background-color: #f5f3f3;
+  position: relative;
+  top: -14px;
+  -webkit-box-shadow: 0px 1px 13px -2px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 1px 13px -2px rgba(0,0,0,0.75);
+  box-shadow: 0px 1px 13px -2px rgba(0,0,0,0.75);
+}
+
+.player-bar-container .player-bar .timeline-container .transparent-line {
+  width: 100%;
+  height: 10px;
+  background-color: red;
+  position: absolute;
+  top: 0;
+  opacity: 0;
+}
+
+.player-bar-container .player-bar .song {
+  height: 18px;
+  margin-bottom: relative;
+  position: relative;
+  top: -13px;
+}
+
+.player-bar-container .player-actions i.icon {
+  color: white;
+  font-size: 2em;
+  margin-left: 10px;
+}
+
+.player-bar-container .player-actions-container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: #0e737b;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.waves {
+  margin-top: 11px;
+  position: relative;
+}
+
+.waves span {
+  width:3px;
+  height: 5px;
+  bottom:0px;
+  position:absolute;
+  background:#f3f3f3;
+  -webkit-animation: bodong 0.5s infinite  ease;
+}
+
+.waves span:first-child{
+  left:0px;
+  -webkit-animation-delay:.3s;
+}
+
+.waves span:nth-child(2){
+  left:5px;
+  -webkit-animation-delay:.4s;
+
+}
+.waves span:nth-child(3){
+  left:10px;
+  -webkit-animation-delay:.6s;
+}
+.waves span:nth-child(4){
+  left:15px;
+  -webkit-animation-delay:.8s;
+}
+.waves span:nth-child(5){
+  left:20px;
+  -webkit-animation-delay:1s;
+}
+
+@-webkit-keyframes bodong {
+  0%{height:5px; background:bule;}
+  30%{height:10px; background:bule;}
+  60%{height:15px; background:bule;}
+  80%{height:10px; background:bule;}
+  100%{height:5px; background:bule;}
+}
+
+.player-bar-container .tracks-container {
+  width: 100vw;
+  height: 58px;
+  background: #06555f;
+}
+
+.player-bar-container .tracks-container .track-item {
+  width: 100px;
+  height: 100%;
+  display: flex!important;
+  flex-direction: row;
+  margin: 8px;
+  background-color: #02383e;
+  border: solid 1px #026d75;
+  height: 42px;
+}
+
+@-webkit-keyframes mymove {
+  0%   {box-shadow:2px 2px 20px 8px rgba(3,247,235,0)}
+  50%  {box-shadow:2px 2px 20px 8px rgba(3,247,235,1)}
+  100% {box-shadow:2px 2px 20px 8px rgba(3,247,235,0)}
+}
+
+@keyframes mymove {
+  0%   {box-shadow:2px 2px 20px 8px rgba(3,247,235,0)}
+  50%  {box-shadow:2px 2px 20px 8px rgba(3,247,235,1)}
+  100% {box-shadow:2px 2px 20px 8px rgba(3,247,235,0)}
+}
+
+.player-bar-container .tracks-container .track-item.shadow {
+  -webkit-animation: mymove 1.9s infinite;
+  animation: mymove 1.9s infinite;
+}
+
+.player-bar-container .tracks-container .track-item .track-cover {
+  width: 50px;;
+}
+
+.player-bar-container .tracks-container .track-item .track-cover img {
+  width: 100%;
+}
+
+.player-bar-container .tracks-container .track-item .track-info {
+  padding-left: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 42px;
+}
+
+.player-bar-container .tracks-container .track-item .track-info h3 {
+  font-size: .8em;
+  color: white;
+  padding: 0;
+  margin: 0;
+}
+
+.player-bar-container .tracks-container .track-item .track-info span {
+  font-size: .8em;
+  color: white;
+}
+
+.player-bar-container .tracks-container .slick-slider {
+  height: 100%;
+}
+
+.player-bar-container .tracks-container .slick-list {
+  height: 100%;
+}
+
+.player-bar-container .tracks-container .slick-track {
+  height: 100%;
+}
+
+.player-bar-container .tracks-container .slick-slide {
+  height: 100%;
+  width: auto!important;
+}
+
+.player-bar-container .tracks-container .slick-slide > div {
+  display: block;
+  height: 100%;
+  margin-right: 9px;
+}

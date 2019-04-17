@@ -1,0 +1,146 @@
+.showcase-container {
+  box-shadow: initial!important;
+  border: 0!important;
+  border-radius: 0!important;
+  margin: 0!important;
+  padding-left: 0px!important;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#87e0fd+0,53cbf1+59,05abe0+100 */
+  background: #87e0fd; /* Old browsers */
+  background: -moz-linear-gradient(left, #aef1f9 0%,#78d3dc 48%,#60b8bf 100%)!important; /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, #aef1f9 0%,#78d3dc 48%,#60b8bf 100%)!important; /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to left, #aef1f9 0%,#78d3dc 48%,#60b8bf 100%)!important; /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#87e0fd', endColorstr='#05abe0',GradientType=0 ); /* IE6-9 */
+}
+
+.showcase-container .ui.segment.genres {
+  background: initial;
+  box-shadow: initial;
+  border: none;
+  left: calc(6% - 15px);
+  top: 2vw;
+}
+
+@media (max-width: 900px) {
+  .showcase-container .ui.segment.genres {
+    margin: auto;
+    width: 83%;
+    text-align: center;
+  }
+}
+
+.showcase-container > .vinly {
+  width: 151px;
+  height: 133px;
+  background-image: url(../images/vinly.svg);
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 28px;
+  top: 20px;
+}
+
+.showcase-container .title {
+  font-family: 'Oswald';
+  font-size: 6rem;
+  color: #3B4849;
+  letter-spacing: 0;
+  text-shadow: 0 11px 12px #B5F7FF;
+  font-weight: 700;
+  position: relative;
+  left: 6%;
+  margin-top: 50px;
+}
+
+.showcase-container .description {
+  font-family: 'Oswald';
+  position: relative;
+  color: #fff;
+  left: 6%;
+  font-size: 14px;
+  letter-spacing: 1px;
+  width: 87.7%;
+  line-height: 22px;
+  margin-top: 21px;
+  margin-bottom: 35px;
+}
+
+.showcase-container .showcase-tabs-container {
+  margin-top: 4vw;
+}
+
+.showcase-container .showcase-tabs-container .ui.menu {
+  border-bottom: none;
+  position: relative;
+  left: 6%;
+}
+
+.showcase-container .showcase-tabs-container .ui.menu a {
+  color: #EAFFFF!important;
+  font-size: 0.9rem;
+  letter-spacing: .6px;
+  border-bottom: none!important;
+  margin-right: 2.4vw;
+  position: relative;
+}
+
+.showcase-container .menu a.active:before {
+  content: '';
+  display: inline-block;
+  width: 38px!important;
+  height: 4px!important;
+  background-color: #B3EAFF!important;
+  position: absolute;
+  left: calc((100% - 38px) / 2);
+  border-radius: 2px!important;
+  box-shadow: 0 0 4px -1px rgba(0,0,0,0.50);
+  bottom: 5px;
+}
+
+@media (max-width: 1200px) {
+  .showcase-container .title {
+    font-size: 4rem;
+  }
+
+  .showcase-container .ui.segment.genres {
+    padding: 0em 1em;
+    top: 2vw;
+  }
+}
+
+@media (max-width: 1024px) and (min-width: 770px) {
+  .showcase-container .showcase-tabs-container {
+    margin-top: 8.2vw;
+  }
+}
+@media (max-width: 500px) {
+  .showcase-container .title {
+    font-size: 3rem;
+  }
+  .showcase-container .description {
+    font-size: 12px;
+  }
+  .showcase-container > .vinly {
+    background-size: 112px;
+    width: 112px;
+    height: 92px;
+    opacity: .6;
+    right: 5px;
+    top: 46px;
+  }
+}
+@media (min-width: 502px) and (max-width: 768px) {
+  .showcase-container .showcase-tabs-container {
+    margin-top: 8.2vw;
+  }
+}
+
+@media (max-width: 500px) and (min-width: 373px) {
+  .showcase-container .showcase-tabs-container {
+    margin-top: 8.2vw;
+  }
+}
+
+@media (max-width: 322px) {
+  .showcase-container .showcase-tabs-container {
+    margin-top: 8.2vw;
+  }
+}
