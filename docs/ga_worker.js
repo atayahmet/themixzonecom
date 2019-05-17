@@ -9,11 +9,9 @@ const toQueryString = (params) => {
 onmessage = (e) => {
   console.log('workerx', e.data.args);
   var request = new XMLHttpRequest();
-  request.open('POST', baseUrl, true);
-  request.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-  request.send(toQueryString(e.data.args));
+  request.open('POST', baseUrl+'?'+toQueryString(e.data.args), true);
+  request.send();
   request.onload = function () {
-    //postMessage(xhr.responseText);
     postMessage(e.data);
   };
 };
