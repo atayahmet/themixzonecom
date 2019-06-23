@@ -7,9 +7,8 @@ const toQueryString = (params) => {
 }
 
 onmessage = (e) => {
-  console.log('workerx', e.data.args);
   var request = new XMLHttpRequest();
-  request.open('POST', baseUrl+'?'+toQueryString({...e.data.args, z: Math.random()}), true);
+  request.open('GET', baseUrl+'?'+toQueryString({...e.data.args, z: Math.random()}), true);
   request.send();
   request.onload = function () {
     postMessage(e.data);
