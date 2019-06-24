@@ -20,6 +20,7 @@ tslint.json
 yarn.lock
 .editorconfig
 README.md
+TODO
 
 # misc
 .DS_Store
